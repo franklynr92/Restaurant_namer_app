@@ -25,7 +25,7 @@ class NameForm extends Component {
 
   printNames() {
     return this.state.names.map((name) => (
-      <li>
+      <li key={name.id}>
         {name} <button onClick={this.handleClick}>{name}</button>
       </li>
     ));
